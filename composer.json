@@ -1,0 +1,9 @@
+{
+    "name": "Noelno/Sharelinks",
+    "description": "Create share links for Facebook, Twitter and Google+.",
+    "autoload": {
+        "psr-4" : {
+             "ShareLinks\\": "src/Sharelinks/"
+        }
+    }
+}

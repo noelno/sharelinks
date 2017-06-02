@@ -1,5 +1,8 @@
 <?php 
-class LinkWithTarget{
+namespace Noelno\Sharelinks;
+
+class LinkWithTarget
+{
     
     protected $link;
     protected $target;

@@ -9,13 +9,11 @@
     </head>
 <body>
 <?php 
-    include "Link.php";
-    include "FacebookLink.php";
-    include "LinkWithTarget.php";
-    include "LinkWithClasses.php";
+    use Noelno/Sharelinks;
+    
     $link = new LinkWithClasses(
         new LinkWithTarget(
-            new FacebookLink("Google", "https://www.google.fr"),
+            new GooglePlusLink("https://www.google.fr","Google"),
             "_blank"
         ),
         "google-link"

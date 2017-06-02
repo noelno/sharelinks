@@ -1,13 +1,16 @@
 <?php 
-class Link{
+namespace Noelno\Sharelinks;
+
+class Link
+{
     
-    protected $title;
     protected $url;
+    protected $title;
     
-    public function __construct($title, $url)
+    public function __construct($url,$title)
     {
-		$this->title = $title;
 		$this->url = $url;
+        $this->title = $title;
 	}
     
     public function __toString()
