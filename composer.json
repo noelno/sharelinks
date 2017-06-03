@@ -1,9 +1,17 @@
 {
-    "name": "Noelno/Sharelinks",
+    "name": "noelno/sharelinks",
     "description": "Create share links for Facebook, Twitter and Google+.",
+    "require": {
+        "php": ">=5.0.0"
+    },
     "autoload": {
-        "psr-4" : {
-             "ShareLinks\\": "src/Sharelinks/"
-        }
+        "classmap": [
+            "Link.php",
+            "LinkWithClasses.php",
+            "LinkWithTarget.php",
+            "FacebookLink.php",
+            "TwitterLink.php",
+            "GooglePlusLink.php"
+        ]
     }
 }
