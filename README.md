@@ -64,23 +64,33 @@ echo new LinkWithClasses(
 ```
     
 This will print :
+```html
+<a class="btn btn-google-plus" href="https://plus.google.com/share?url=https%3A%2F%2Fgithub.com%2Fnoelno%2Fsharelinks">Sharelinks on Github</a>
+```
 
-    <a class="btn btn-google-plus" href="https://plus.google.com/share?url=https%3A%2F%2Fgithub.com%2Fnoelno%2Fsharelinks">Sharelinks on Github</a>
-    
 To specify the `target` attribute of the link, wrap it in a `LinkWithTarget` object :
-
-    echo new LinkWithTarget(
-        new GooglePlusLink("https://github.com/noelno/sharelinks","Sharelinks on Github"), "_blank"
-    );
+```php
+echo new LinkWithTarget(
+    new GooglePlusLink("https://github.com/noelno/sharelinks","Sharelinks on Github"), "_blank"
+);
+```
 
 This will print :
+```html
+<a target="_blank" href="https://plus.google.com/share?url=https%3A%2F%2Fgithub.com%2Fnoelno%2Fsharelinks">Sharelinks on Github</a>
+```
 
-    <a target="_blank" href="https://plus.google.com/share?url=https%3A%2F%2Fgithub.com%2Fnoelno%2Fsharelinks">Sharelinks on Github</a>
-    
 What if I need both of these attributes ?
 
-    echo new LinkWithClasses(
-        new LinkWithTarget(
-            new GooglePlusLink("https://github.com/noelno/sharelinks","Sharelinks on Github"), "_blank"
-        ), "btn btn-google-plus"
-    );
+```php
+echo new LinkWithClasses(
+    new LinkWithTarget(
+        new GooglePlusLink("https://github.com/noelno/sharelinks","Sharelinks on Github"), "_blank"
+    ), "btn btn-google-plus"
+);
+``````
+
+This will print :
+```html
+<a target="_blank" class="btn btn-google-plus" href="https://plus.google.com/share?url=https%3A%2F%2Fgithub.com%2Fnoelno%2Fsharelinks">Sharelinks on Github</a>
+```
