@@ -3,15 +3,5 @@
     "description": "Create share links for Facebook, Twitter and Google+.",
     "require": {
         "php": ">=5.0.0"
-    },
-    "autoload": {
-        "classmap": [
-            "Link.php",
-            "LinkWithClasses.php",
-            "LinkWithTarget.php",
-            "FacebookLink.php",
-            "TwitterLink.php",
-            "GooglePlusLink.php"
-        ]
     }
 }
